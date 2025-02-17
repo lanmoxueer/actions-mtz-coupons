@@ -95,8 +95,7 @@ async function grabCoupon(cookie, gundamId, guard) {
       guard
     }
   )
-
-  print("response:%s" % res)
+  console.log("response:%s", res)
 
   if (res.code == 0) {
     return formatCoupons(res.data.coupons, tmplData.actName)
