@@ -37,8 +37,8 @@ async function runTask(cookie, guard) {
   } catch (e) {
     let code, msg
 
-    // console.log('grabCoupon error', e)
-
+    console.log('grabCoupon error', e)
+    
     switch (e.code) {
       case ECODE.AUTH:
         code = ECODE.AUTH
